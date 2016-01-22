@@ -1,0 +1,332 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@media only screen and (max-width: 40em) {
+
+	#navi{
+		height:145px!important;
+
+	}
+	#navi ul li{
+		font-size:15px!important;
+		display:inline!important;
+	}
+
+
+	#title h1{
+		
+		font-size:100px!important;
+	}
+
+	svg{
+		visibility:hidden;
+	}
+
+#about{
+	height:500px!important;
+}
+	.moshi{
+		height:250px!important;
+	}
+	.overlay{
+		height:250px!important;
+	}
+	.karen{
+		height:210px!important;
+	}
+
+	#music-list{
+	padding-top:0px!important;
+
+}
+.karen p{
+	font-size:1.0em!important;
+}
+ } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+
+	#navi{
+		background:blue;
+		max-height:200px;
+		
+
+	}
+	#navi ul li{
+		font-size:12px;
+	}
+
+
+		#title h1{
+		
+		font-size:150px!important;
+	}
+
+	#title{
+
+	top:10%!important;
+
+
+	
+}
+	svg{
+		visibility:hidden;
+	}
+
+.moshi{
+		height:420px!important;
+	}
+.overlay{
+		height:420px!important;
+	}
+
+.karen{
+		height:335px!important;
+
+
+	}
+	} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+
+
+
+
+
+
+
+
+
+*{
+	margin:0;
+	padding:0;
+
+}
+
+
+#navi{
+	background:black;
+	height:70px;
+	max-width:100%;
+	padding-top: 35px;
+	
+}
+
+#navi ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+#navi ul li{
+
+	display:inline;
+	margin-left:60px;
+	margin-right:60px;
+	
+
+}
+#navi a{
+	color:white;
+	text-decoration:none;
+	font-family: "Montserrat"!important;
+}
+
+
+
+
+/*
+#mySketch{
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+*/
+#banner{
+	
+	position:relative;
+	width:100%;	
+	background:url("../img/KarenSide2.png") center no-repeat fixed;
+	height:560px;
+
+}
+#banner-bg{
+
+	max-height:560px;
+}
+.centered{
+	margin:auto 0;
+}
+.text-centered{
+
+	text-align:center;
+	
+}
+
+#title{
+	position:absolute!important;
+	top:10%;
+	left:10%;
+	right:10%;
+
+	
+}
+#title h1{
+	color:white;
+	font-family: "Komoda";
+	font-size:200px;
+}
+
+
+svg{
+	
+}
+#rect{
+
+	position:absolute;
+	margin-top:-550px;
+	margin-left:100px;
+	height:500px;
+	z-index:0;
+	white-space:nowrap;
+}
+
+.circle-border:hover .svg{
+
+	stroke-dasharray:300;
+	 stroke-dashoffset:300;
+  -webkit-animation: draw 1s linear forwards;
+  animation: draw 1s linear forwards;
+  -moz-animation: draw 1s linear forwards;
+	
+}
+
+
+ #about{
+ 	height:400px;
+ 	top:45%;
+	
+	right:30%;
+	left:30%;
+
+ }
+
+
+ @-moz-keyframes draw {
+  50% {
+    stroke-dashoffset: 0;
+  }
+}
+
+ @-webkit-keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+#about{
+	background-color: rgb(224,224,222);
+	padding-top:75px;
+}
+
+#about h3{
+	body{
+	font-family: "Montserrat";
+}
+}
+
+.moshi{
+	height:550px;
+	background:url("../img/bw2Moshi.png") no-repeat center;
+	background-size:100%;
+	position:relative!important;
+
+	
+
+	
+}
+
+
+.moshi .text-centered{
+
+	color:white;
+}
+.moshi a{
+	color:white;
+	font-family: "Montserrat";
+	border:1px solid white;
+	padding:10px 20px;
+
+}
+.moshi h3{
+	padding-top:75px;
+}
+.moshi a:hover{
+	background:black;
+	color:white;
+	opacity:.3;
+	border:0;
+	
+}
+.karen{
+	background:url("../img/bwKaren.png") no-repeat 100% center;
+	background-size:100%;
+	height:550px;
+	position:relative!important;
+	z-index:-1;
+}
+
+.karen p{
+	
+	color:white;
+	font-size:1.5em;
+	padding-top:35px;
+	float:right;
+}
+.karen a{
+	color:white;
+	font-family: "Montserrat";
+
+
+
+}
+#music-list{
+	padding-top:150px;
+	z-index:99999;
+
+}
+
+.social-media a:hover{
+
+	border-bottom:solid orange 10px;
+}
+
+.social-media{
+	background-color:black;
+	height:300px;
+	color:white;
+}
+
+.social-media{
+	padding-top:100px;
+}
+
+.footer{
+	height:50px;
+	color:white;
+	background:black;
+}
+
+.footer p{
+	font-size: 7px;
+	margin:0;
+}
