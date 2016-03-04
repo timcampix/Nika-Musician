@@ -28,8 +28,9 @@
 	}
 
 	#video-wrapper{
-		visibility:visible;
+		visibility:hidden;
 	}
+	
 
 #about{
 	height:500px!important;
